@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import HelloApp from "./Widgets/Hello";
+import Time from "./Widgets/Time";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
         >
           Learn React
         </a>
-        <HelloApp />
+        <HelloApp name="bayes" />
+        <Time title="Time Count" />
       </header>
     </div>
   );

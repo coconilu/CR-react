@@ -1,8 +1,21 @@
 import React from "react";
 
 class HelloApp extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "Alpha",
+    };
+  }
+
+  onClick = () => {
+    this.setState({
+      name: this.props.name,
+    });
+  };
+
   render() {
-    return <div>Hello World</div>;
+    return <div>Hello {this.state.name}</div>;
   }
 }
 
