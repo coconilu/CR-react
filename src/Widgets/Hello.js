@@ -15,7 +15,7 @@ class HelloApp extends React.Component {
   };
 
   render() {
-    return <div>Hello {this.state.name}</div>;
+    return <div onClick={this.onClick}>Hello {this.state.name}</div>;
   }
 }
 
